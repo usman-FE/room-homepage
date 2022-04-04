@@ -6,6 +6,12 @@
   grid-row: row-start 7 / row-end 7;
   width: 100%;
 
+  @media only screen and (max-width: var.$bp-large) {
+    grid-column: col-start 15 / full-end;
+    grid-row: row-start 7 / row-end 7;
+    z-index: 22;
+  }
+
   &__btn {
     width: 50%;
     background-color: var.$Black;

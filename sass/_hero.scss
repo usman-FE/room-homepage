@@ -1,8 +1,14 @@
+@use "utils" as var;
+
 .hero {
   &__images-section {
     grid-column: full-start / col-end 10;
     grid-row: row-start 1 / row-end 7;
     z-index: 2;
+
+    @media only screen and (max-width: var.$bp-large) {
+      grid-column: full-start / full-end;
+    }
 
     &--images-box {
       width: 100%;
@@ -21,6 +27,16 @@
     grid-column: col-start 11 / full-end;
     grid-row: row-start 1 / row-end 7;
     padding: 11.8rem 15%;
+    align-self: start;
+
+    @media only screen and (max-width: var.$bp-largest) {
+      padding: 9rem 10%;
+    }
+
+    @media only screen and (max-width: var.$bp-large) {
+      grid-column: full-start / full-end;
+      grid-row: row-start 8 / row-end 13;
+    }
 
     &--heading {
       margin-bottom: 3.5rem;
