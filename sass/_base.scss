@@ -9,6 +9,5 @@
     minmax(4rem, 1fr)
     [full-end];
 
-  grid-template-rows: repeat(10, 8rem);
-  background-color: orangered;
+  grid-template-rows: repeat(10, [row-start] 8rem [row-end]);
 }

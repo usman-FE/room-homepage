@@ -1,0 +1,35 @@
+@use "../utils" as var;
+
+.heading-1 {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 4.5rem;
+  letter-spacing: -0.2rem;
+}
+
+.heading-2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 4.5rem;
+  letter-spacing: 0.7rem;
+}
+
+.detail-paragraph {
+  color: var.$Dark-Gray;
+}
+
+.cta,
+.cta:link,
+.cta:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var.$Black;
+  letter-spacing: 1.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta:hover,
+.cta:active {
+  color: var.$Dark-Gray;
+}

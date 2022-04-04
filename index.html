@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +19,9 @@
   <body class="container">
     <header class="header">
       <div class="logo-box">
-        <img src="images/logo.svg" alt="Room Logo" class="logo" />
+        <a href="#" class="logo-box__link">
+          <img src="images/logo.svg" alt="Room Logo" class="logo" />
+        </a>
       </div>
 
       <nav class="navigation">
@@ -48,11 +45,74 @@
         <span class="hamburger__icon">&nbsp;</span>
       </div>
     </header>
-    <!-- Home Shop About Contact Discover innovative ways to decorate We provide
-    unmatched quality, comfort, and style for property owners across the
-    country. Our experts combine form and function in bringing your vision to
-    life. Create a room in your own style with our collection and make your
-    property a reflection of you and what you love. Shop now We are available
+    <section class="hero__images-section">
+      <div class="hero__images-section--images-box">
+        <img
+          src="images/desktop-image-hero-1.jpg"
+          alt="Hero Image 1"
+          class="hero__img"
+        />
+      </div>
+    </section>
+    <section class="hero__content-section">
+      <h1 class="heading-1 hero__content-section--heading">
+        Discover innovative ways to decorate
+      </h1>
+      <p class="detail-paragraph hero__content-section--paragraph">
+        We provide unmatched quality, comfort, and style for property owners
+        across the country. Our experts combine form and function in bringing
+        your vision to life. Create a room in your own style with our collection
+        and make your property a reflection of you and what you love.
+      </p>
+
+      <a href="#" class="cta"
+        >Shop now
+        <span class="right-arrow"></span>
+      </a>
+    </section>
+    <div class="slider">
+      <button class="slider__btn-left slider__btn">
+        <img
+          src="images/icon-angle-left.svg"
+          alt="Slider Left"
+          class="slider__image-left"
+        />
+      </button>
+      <button class="slider__btn-right slider__btn">
+        <img
+          src="images/icon-angle-right.svg"
+          alt="Slider right"
+          class="slider__image-right"
+        />
+      </button>
+    </div>
+
+    <section class="about__dark">
+      <img
+        src="images/image-about-dark.jpg"
+        alt="About Image Dark"
+        class="about__dark--img"
+      />
+    </section>
+    <section class="about__content">
+      <h2 class="heading-2 about__content--heading">About our furniture</h2>
+      <p class="about__content--paragraph detail-paragraph">
+        Our multifunctional collection blends design and function to suit your
+        individual taste. Make each room unique, or pick a cohesive theme that
+        best express your interests and what inspires you. Find the furniture
+        pieces you need, from traditional to contemporary styles or anything in
+        between. Product specialists are available to help you create your dream
+        space.
+      </p>
+    </section>
+    <section class="about__light">
+      <img
+        src="images/image-about-light.jpg"
+        alt="About Light Image"
+        class="about__light--img"
+      />
+    </section>
+    <!--    We are available
     all across the globe With stores all over the world, it's easy for you to
     find furniture for your home or place of business. Locally, we’re in most
     major cities throughout the country. Find the branch nearest you using our
@@ -61,11 +121,6 @@
     high level of quality. Our company has invested in advanced technology to
     ensure that every product is made as perfect and as consistent as possible.
     With three decades of experience in this industry, we understand what
-    customers want for their home and office. Shop now About our furniture Our
-    multifunctional collection blends design and function to suit your
-    individual taste. Make each room unique, or pick a cohesive theme that best
-    express your interests and what inspires you. Find the furniture pieces you
-    need, from traditional to contemporary styles or anything in between.
-    Product specialists are available to help you create your dream space. -->
+    customers want for their home and office. Shop now   -->
   </body>
 </html>
