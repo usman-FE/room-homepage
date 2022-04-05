@@ -38,6 +38,10 @@
       grid-row: row-start 8 / row-end 13;
     }
 
+    @media only screen and (max-width: var.$bp-small) {
+      padding: 11.8rem 5%;
+    }
+
     &--heading {
       margin-bottom: 3.5rem;
     }

@@ -13,7 +13,7 @@
 
     @media only screen and (max-width: var.$bp-medium) {
       grid-column: full-start / full-end;
-      grid-row: auto;
+      grid-row: row-start 14 / row-end 16;
     }
 
     &--img {
@@ -34,7 +34,11 @@
 
     @media only screen and (max-width: var.$bp-medium) {
       grid-column: full-start / full-end;
-      grid-row: auto;
+      grid-row: row-start 17 / row-end 19;
+    }
+
+    @media only screen and (max-width: var.$bp-small) {
+      padding: 5rem 5%;
     }
   }
 
@@ -50,7 +54,7 @@
 
     @media only screen and (max-width: var.$bp-medium) {
       grid-column: full-start / full-end;
-      grid-row: auto;
+      grid-row: row-start 20 / row-end 22;
     }
 
     &--img {
