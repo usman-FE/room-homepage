@@ -18,6 +18,14 @@
   </head>
   <body class="container">
     <header class="header">
+      <div class="hamburger">
+        <img
+          src="images/icon-hamburger.svg"
+          alt="Hamburger Icon"
+          class="hamburger__icon"
+        />
+      </div>
+
       <div class="logo-box">
         <a href="#" class="logo-box__link">
           <img src="images/logo.svg" alt="Room Logo" class="logo" />
@@ -40,18 +48,26 @@
           </li>
         </ul>
       </nav>
-
-      <div class="hamburger">
-        <span class="hamburger__icon">&nbsp;</span>
-      </div>
     </header>
     <section class="hero__images-section">
       <div class="hero__images-section--images-box">
-        <img
+        <!-- <img
           src="images/desktop-image-hero-1.jpg"
           alt="Hero Image 1"
           class="hero__img"
-        />
+        /> -->
+        <picture class="hero__img">
+          <source
+            srcset="images/mobile-image-hero-1.jpg"
+            media="(max-width: 31.25em)"
+            alt="Hero Image 1"
+          />
+          <img
+            src="images/desktop-image-hero-1.jpg"
+            alt="Hero Image 1"
+            class="hero__img"
+          />
+        </picture>
       </div>
     </section>
     <section class="hero__content-section">

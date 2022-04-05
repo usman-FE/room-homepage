@@ -5,6 +5,10 @@
   font-weight: 600;
   line-height: 4.5rem;
   letter-spacing: -0.2rem;
+
+  @media only screen and (max-width: var.$bp-smallest) {
+    font-size: 3.5rem;
+  }
 }
 
 .heading-2 {
@@ -34,26 +38,20 @@
 .cta::after {
   content: "";
   display: inline-block;
-  height: 1.2rem;
-  width: 4rem;
+  height: 2rem;
+  width: 6rem;
   margin-left: 3rem;
   // background-image: url(../../images/icon-arrow.svg);
   // background-size: cover;
   background-color: var.$Black;
   -webkit-mask-image: url(../../images/icon-arrow.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
   mask-image: url(../../images/icon-arrow.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
 
   transition: all 0.2s ease-in-out;
-
-  @media only screen and (max-width: var.$bp-largest) {
-    height: 1.4rem;
-    width: 5rem;
-  }
-
-  @media only screen and (max-width: var.$bp-medium) {
-    height: 1.6rem;
-    width: 5rem;
-  }
 }
 
 .cta:hover,

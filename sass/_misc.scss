@@ -12,6 +12,11 @@
     z-index: 22;
   }
 
+  @media only screen and (max-width: var.$bp-smallest) {
+    grid-row: 2 / span 1;
+    align-items: flex-end;
+  }
+
   &__btn {
     width: 50%;
     background-color: var.$Black;
@@ -19,6 +24,10 @@
     border: none;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+
+    @media only screen and (max-width: var.$bp-smallest) {
+      padding: 2rem;
+    }
   }
 
   &__btn:hover {
@@ -29,4 +38,8 @@
 // HAMBURGER MENU
 .hamburger {
   display: none;
+  @media only screen and (max-width: var.$bp-smallest) {
+    display: block;
+    flex: 1;
+  }
 }

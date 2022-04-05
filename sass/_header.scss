@@ -13,26 +13,44 @@
     justify-content: space-between;
     padding: 0 5%;
   }
+
+  @media only screen and (max-width: var.$bp-smallest) {
+    grid-template-rows: 1 / span 1;
+    padding: 0 3.2rem;
+    align-items: center;
+    position: relative;
+  }
 }
 
 .logo-box {
   margin-right: 5.3rem;
 
+  @media only screen and (max-width: var.$bp-smallest) {
+    flex: 1;
+  }
+
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: var.$bp-smallest) {
+      justify-content: flex-start;
+    }
   }
 }
 
 .navigation {
+  @media only screen and (max-width: var.$bp-smallest) {
+    transform: translateX(450px);
+    position: absolute;
+  }
   &__items {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     list-style: none;
   }
-
   &__item:not(:last-child) {
     margin-right: 3rem;
   }
