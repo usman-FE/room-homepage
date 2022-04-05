@@ -15,6 +15,7 @@
   @media only screen and (max-width: var.$bp-smallest) {
     grid-row: 2 / span 1;
     align-items: flex-end;
+    z-index: 2;
   }
 
   &__btn {
@@ -42,4 +43,51 @@
     display: block;
     flex: 1;
   }
+
+  &__icon {
+    cursor: pointer;
+    display: inline-block;
+    background-image: url(../images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 14px;
+    width: 20px;
+  }
+}
+
+.icon-cross {
+  background-image: url(../images/icon-close.svg);
+  width: 16px;
+  height: 16px;
+}
+
+.logo-hide {
+  display: none;
+}
+
+.header-white {
+  background-color: #fff;
+
+  &::after {
+    content: "";
+    background-color: var.$Black;
+    opacity: 0.7;
+    z-index: 222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.show-navigation {
+  transform: translateX(0px);
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  color: var.$Black;
+}
+.color-black {
+  color: var.$Black;
 }
