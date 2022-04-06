@@ -5,6 +5,7 @@
   grid-column: col-start 11 / span 2;
   grid-row: row-start 7 / row-end 7;
   width: 100%;
+  z-index: 3;
 
   @media only screen and (max-width: var.$bp-large) {
     grid-column: col-start 15 / full-end;
@@ -83,6 +84,7 @@
 }
 
 .overlay-show {
+  z-index: 4;
   display: block;
   background-color: var.$Black;
   opacity: 0.7;
