@@ -13,12 +13,16 @@ hamburger.addEventListener('click', function (e) {
   if (!(icon.classList.contains('hamburger__icon'))) return;
 
   icon.classList.toggle('icon-cross');
-  logo.classList.toggle('logo-hide');
   header.classList.toggle('header-white');
   nav.classList.toggle('show-navigation');
+  nav.classList.toggle('hidden');
   overlay.classList.toggle('overlay-show');
   navLink.forEach(link => {
     link.classList.toggle('color-black');
   })
+  setTimeout(function () {
+    logo.classList.toggle('logo-hide');
+    nav.classList.toggle('position-absolute');
+  }, 400);
 
 });
