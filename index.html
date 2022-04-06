@@ -49,13 +49,9 @@
       </nav>
     </header>
     <section class="hero__images-section">
-      <div class="hero__images-section--images-box">
-        <!-- <img
-          src="images/desktop-image-hero-1.jpg"
-          alt="Hero Image 1"
-          class="hero__img"
-        /> -->
-        <picture class="hero__img">
+      <!-- 1 -->
+      <div class="hero__images-section--images-box" id="slide">
+        <picture class="hero__img hero__img1">
           <source
             srcset="images/mobile-image-hero-1.jpg"
             media="(max-width: 31.25em)"
@@ -68,19 +64,83 @@
           />
         </picture>
       </div>
+      <!-- 2 -->
+      <div class="hero__images-section--images-box" id="slide">
+        <picture class="hero__img hero__img2">
+          <source
+            srcset="images/mobile-image-hero-2.jpg"
+            media="(max-width: 31.25em)"
+            alt="Hero Image 2"
+          />
+          <img
+            src="images/desktop-image-hero-2.jpg"
+            alt="Hero Image 2"
+            class="hero__img"
+          />
+        </picture>
+      </div>
+      <!-- 3 -->
+      <div class="hero__images-section--images-box" id="slide">
+        <picture class="hero__img hero__img3">
+          <source
+            srcset="images/mobile-image-hero-3.jpg"
+            media="(max-width: 31.25em)"
+            alt="Hero Image 3"
+          />
+          <img
+            src="images/desktop-image-hero-3.jpg"
+            alt="Hero Image 3"
+            class="hero__img"
+          />
+        </picture>
+      </div>
     </section>
     <section class="hero__content-section">
-      <h1 class="heading-1 hero__content-section--heading">
-        Discover innovative ways to decorate
-      </h1>
-      <p class="detail-paragraph hero__content-section--paragraph">
-        We provide unmatched quality, comfort, and style for property owners
-        across the country. Our experts combine form and function in bringing
-        your vision to life. Create a room in your own style with our collection
-        and make your property a reflection of you and what you love.
-      </p>
+      <div class="hero__content-main">
+        <!-- 1 -->
+        <div class="hero__content-box">
+          <h1 class="heading-1 hero__content-section--heading">
+            Discover innovative ways to decorate
+          </h1>
+          <p class="detail-paragraph hero__content-section--paragraph">
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+          <a href="#" class="cta">Shop now</a>
+        </div>
 
-      <a href="#" class="cta">Shop now</a>
+        <!-- 2 -->
+        <div class="hero__content-box">
+          <h1 class="heading-1 hero__content-section--heading">
+            We are available all across the globe
+          </h1>
+          <p class="detail-paragraph hero__content-section--paragraph">
+            With stores all over the world, it's easy for you to find furniture
+            for your home or place of business. Locally, we’re in most major
+            cities throughout the country. Find the branch nearest you using our
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+          <a href="#" class="cta">Shop now</a>
+        </div>
+
+        <!-- 3 -->
+        <div class="hero__content-box">
+          <h1 class="heading-1 hero__content-section--heading">
+            Manufactured with the best materials
+          </h1>
+          <p class="detail-paragraph hero__content-section--paragraph">
+            Our modern furniture store provide a high level of quality. Our
+            company has invested in advanced technology to ensure that every
+            product is made as perfect and as consistent as possible. With three
+            decades of experience in this industry, we understand what customers
+            want for their home and office. Shop now
+          </p>
+          <a href="#" class="cta">Shop now</a>
+        </div>
+      </div>
     </section>
     <div class="slider">
       <button class="slider__btn-left slider__btn">
@@ -124,15 +184,5 @@
         class="about__light--img"
       />
     </section>
-    <!--    We are available
-    all across the globe With stores all over the world, it's easy for you to
-    find furniture for your home or place of business. Locally, we’re in most
-    major cities throughout the country. Find the branch nearest you using our
-    store locator. Any questions? Don't hesitate to contact us today. Shop now
-    Manufactured with the best materials Our modern furniture store provide a
-    high level of quality. Our company has invested in advanced technology to
-    ensure that every product is made as perfect and as consistent as possible.
-    With three decades of experience in this industry, we understand what
-    customers want for their home and office. Shop now   -->
   </body>
 </html>

@@ -102,7 +102,7 @@ body {
 }
 @media only screen and (max-width: 29.6875em) {
   .container {
-    grid-template-rows: 11.1rem;
+    grid-template-rows: 11.1rem 360px;
   }
 }
 
@@ -193,10 +193,15 @@ body {
   transform: translateX(-50%) scaleX(1);
 }
 
+.hero {
+  position: relative;
+}
 .hero__images-section {
   grid-column: full-start/col-end 10;
   grid-row: row-start 1/row-end 7;
   z-index: 2;
+  position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 56.25em) {
   .hero__images-section {
@@ -211,6 +216,8 @@ body {
 .hero__images-section--images-box {
   width: 100%;
   height: 100%;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
 }
 .hero__img {
   width: 100%;
@@ -251,6 +258,15 @@ body {
 }
 .hero__content-section--paragraph {
   margin-bottom: 3.5rem;
+}
+.hero__content-main {
+  position: relative;
+}
+.hero__content-box {
+  transition: all 0.5s ease-in-out;
+}
+.hero__content-box:not(:last-child) {
+  position: absolute;
 }
 
 .about__dark {

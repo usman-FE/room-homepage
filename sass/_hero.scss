@@ -1,10 +1,13 @@
 @use "utils" as var;
 
 .hero {
+  position: relative;
   &__images-section {
     grid-column: full-start / col-end 10;
     grid-row: row-start 1 / row-end 7;
     z-index: 2;
+    position: relative;
+    overflow: hidden;
 
     @media only screen and (max-width: var.$bp-large) {
       grid-column: full-start / full-end;
@@ -17,6 +20,8 @@
     &--images-box {
       width: 100%;
       height: 100%;
+      position: absolute;
+      transition: all 0.5s ease-in-out;
     }
   }
 
@@ -58,5 +63,17 @@
     &--paragraph {
       margin-bottom: 3.5rem;
     }
+  }
+
+  &__content-main {
+    position: relative;
+  }
+
+  &__content-box {
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__content-box:not(:last-child) {
+    position: absolute;
   }
 }
