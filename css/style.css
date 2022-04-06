@@ -153,7 +153,7 @@ body {
 
 .navigation {
   transition: all 0.4s ease-in-out;
-  transition-delay: 0.2s;
+  transition-delay: 0.3s;
 }
 .navigation__items {
   display: flex;
@@ -169,6 +169,7 @@ body {
   text-transform: lowercase;
   color: hsl(0deg, 0%, 100%);
   position: relative;
+  transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 29.6875em) {
   .navigation__link, .navigation__link, .navigation__visited {
@@ -420,10 +421,23 @@ body {
 
 .color-black {
   color: hsl(0deg, 0%, 0%);
+  transition: all 0.4s;
 }
 
 .overlay {
   display: none;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+}
+
+.display-block {
+  display: block;
+  position: fixed;
 }
 
 @media only screen and (max-width: 29.6875em) {
@@ -441,15 +455,9 @@ body {
 }
 
 .overlay-show {
-  z-index: 4;
-  display: block;
   background-color: hsl(0deg, 0%, 0%);
   opacity: 0.7;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
