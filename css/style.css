@@ -30,7 +30,7 @@ body {
   line-height: 4.5rem;
   letter-spacing: -0.2rem;
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .heading-1 {
     font-size: 3.5rem;
   }
@@ -100,7 +100,7 @@ body {
     grid-template-rows: repeat(22, [row-start] 8rem [row-end]);
   }
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .container {
     grid-template-rows: 11.1rem;
   }
@@ -111,10 +111,9 @@ body {
   grid-row: 1/span 1;
   display: flex;
   align-items: flex-end;
-  z-index: 3;
   padding: 0 2rem;
-  overflow: hidden;
   transition: all 0.6s ease-in-out;
+  z-index: 5;
 }
 @media only screen and (max-width: 31.25em) {
   .header {
@@ -123,19 +122,20 @@ body {
     padding: 0 5%;
   }
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .header {
     grid-template-rows: 1/span 1;
     padding: 0 3.2rem;
     align-items: center;
     position: relative;
+    overflow: hidden;
   }
 }
 
 .logo-box {
   margin-right: 5.3rem;
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .logo-box {
     flex: 1;
   }
@@ -145,7 +145,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .logo-box__link {
     justify-content: flex-start;
   }
@@ -155,7 +155,7 @@ body {
   transition: all 0.4s ease-in-out;
   transition-delay: 0.2s;
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .navigation {
     transform: translateX(450px);
     position: absolute;
@@ -177,6 +177,11 @@ body {
   text-transform: lowercase;
   color: hsl(0deg, 0%, 100%);
   position: relative;
+}
+@media only screen and (max-width: 29.6875em) {
+  .navigation__link, .navigation__link, .navigation__visited {
+    color: hsl(0deg, 0%, 0%);
+  }
 }
 .navigation__link::before {
   content: "";
@@ -206,7 +211,7 @@ body {
     grid-column: full-start/full-end;
   }
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .hero__images-section {
     grid-row: 1/span 2;
   }
@@ -226,6 +231,7 @@ body {
   grid-row: row-start 1/row-end 7;
   padding: 11.8rem 15%;
   align-self: start;
+  z-index: 2;
 }
 @media only screen and (max-width: 75em) {
   .hero__content-section {
@@ -243,7 +249,7 @@ body {
     padding: 11.8rem 5%;
   }
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .hero__content-section {
     padding: 11.8rem 3.2rem;
   }
@@ -298,7 +304,7 @@ body {
     padding: 3rem 5%;
   }
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .about__content {
     padding: 3rem 3.2rem;
   }
@@ -337,14 +343,12 @@ body {
   .slider {
     grid-column: col-start 15/full-end;
     grid-row: row-start 7/row-end 7;
-    z-index: 22;
   }
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .slider {
     grid-row: 2/span 1;
     align-items: flex-end;
-    z-index: 2;
   }
 }
 .slider__btn {
@@ -355,7 +359,7 @@ body {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .slider__btn {
     padding: 2rem;
   }
@@ -367,7 +371,7 @@ body {
 .hamburger {
   display: none;
 }
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 29.6875em) {
   .hamburger {
     display: block;
     flex: 1;
@@ -396,17 +400,6 @@ body {
 .header-white {
   background-color: #fff;
 }
-.header-white::after {
-  content: "";
-  background-color: hsl(0deg, 0%, 0%);
-  opacity: 0.7;
-  z-index: 222;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
 
 .show-navigation {
   transform: translateX(0px);
@@ -418,6 +411,21 @@ body {
 
 .color-black {
   color: hsl(0deg, 0%, 0%);
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay-show {
+  display: block;
+  background-color: hsl(0deg, 0%, 0%);
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
