@@ -60,26 +60,6 @@
   height: 16px;
 }
 
-.logo-hide {
-  display: none;
-}
-
-.header-white {
-  background-color: #fff;
-}
-
-.show-navigation {
-  transform: translateX(0px);
-  position: relative;
-  opacity: 1;
-  visibility: visible;
-  color: var.$Black;
-}
-.color-black {
-  color: var.$Black;
-  transition: all 0.4s;
-}
-
 .overlay {
   display: none;
   opacity: 0;
@@ -112,6 +92,6 @@
 
 .overlay-show {
   background-color: var.$Black;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: all 0.3s ease-in-out;
 }

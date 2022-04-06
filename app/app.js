@@ -10,7 +10,6 @@ const slides = document.querySelectorAll('#slide');
 const heroContent = document.querySelectorAll('.hero__content-box');
 const sBtnLeft = document.querySelector(".slider__btn-left");
 const sBtnRight = document.querySelector(".slider__btn-right");
-console.log(heroContent);
 
 // /////////////HAMBURGER MENU//////////////////
 hamburger.addEventListener('click', function (e) {

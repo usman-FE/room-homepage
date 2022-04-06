@@ -88,3 +88,23 @@
     transform: translateX(-50%) scaleX(1);
   }
 }
+
+.header-white {
+  background-color: #fff;
+}
+
+.logo-hide {
+  display: none;
+}
+
+.show-navigation {
+  transform: translateX(0px);
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  color: var.$Black;
+}
+.color-black {
+  color: var.$Black;
+  transition: all 0.4s;
+}

@@ -16,6 +16,11 @@ html {
     font-size: 55%;
   }
 }
+@media only screen and (max-width: 21.875em) {
+  html {
+    font-size: 43%;
+  }
+}
 
 body {
   font-family: "Spartan", sans-serif;
@@ -192,6 +197,27 @@ body {
 .navigation__link:hover::before {
   opacity: 1;
   transform: translateX(-50%) scaleX(1);
+}
+
+.header-white {
+  background-color: #fff;
+}
+
+.logo-hide {
+  display: none;
+}
+
+.show-navigation {
+  transform: translateX(0px);
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  color: hsl(0deg, 0%, 0%);
+}
+
+.color-black {
+  color: hsl(0deg, 0%, 0%);
+  transition: all 0.4s;
 }
 
 .hero {
@@ -403,27 +429,6 @@ body {
   height: 16px;
 }
 
-.logo-hide {
-  display: none;
-}
-
-.header-white {
-  background-color: #fff;
-}
-
-.show-navigation {
-  transform: translateX(0px);
-  position: relative;
-  opacity: 1;
-  visibility: visible;
-  color: hsl(0deg, 0%, 0%);
-}
-
-.color-black {
-  color: hsl(0deg, 0%, 0%);
-  transition: all 0.4s;
-}
-
 .overlay {
   display: none;
   opacity: 0;
@@ -456,7 +461,7 @@ body {
 
 .overlay-show {
   background-color: hsl(0deg, 0%, 0%);
-  opacity: 0.7;
+  opacity: 0.8;
   transition: all 0.3s ease-in-out;
 }
 
